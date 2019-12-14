@@ -1,17 +1,100 @@
-<HTML>
-    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-    <HEAD>
-    <title>FNew - Write a post (post writer 2.2)</title>
-    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+<!DOCTYPE html>
+<html>
+<head>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<META NAME="description" LANG="en" CONTENT="FNew - the expirimental social media site with an 'everyone-can-write-and-read'-policy created by Marnix 0810.">
+<META NAME="keywords" LANG="en" CONTENT="FNew, Social Media, Social-Media, everyone-can-write-and-read, Marnix0810, Marnix 0810, Writing, Cool">
+<META NAME="robots" CONTENT="noarchive">
+<META NAME="author" LANG="en" CONTENT="Marnix 0810">
+<META NAME="copyright" LANG="en" CONTENT="Copyright (c) 2019 Marnix0810">
+    <title>FNew - Write a post (post writer 2.3)</title>
 <link href="https://marnix0810.github.io/FNew/favicon.ico" rel="shortcut icon" type="image/x-icon">
-</HEAD>
-    <BODY bgcolor="#a8ab0f" text="white" alink="lime" link="#fcba03" vlink="#fcba03"><CENTER>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #a8ab0f;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #fcba03;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+</style>
+</head>
+<BODY bgcolor="#a8ab0f" text="white" alink="lime" link="#fcba03" vlink="#fcba03">
+<CENTER>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+<a href="https://marnix0810.github.io/FNew/">go home</a>
+<a href="https://marnix0810.github.io/FNew/create">I don't have an account yet</a>
+<a href="https://marnix0810.github.io/FNew/links/">more...</a>
+  </div>
+</div>
     <DIV id="titlebar" bgcolor="#a8ab0f"><font color="purple">
     <hr>
-    <H1><font color="#fcba03">F</font><font color="pink">N</font><font color="lime">ew</font> Post Writer</H1>
+    <H1><font color="#fcba03">F</font><font color="pink">N</font><font color="lime">ew</font> <small>by Marnix 2813</small></H1>
     <hr>
     </font></div>
-    <div align="right"><a href="https://marnix0810.github.io/FNew/">go home</a> | <a href="https://marnix0810.github.io/FNew/create">I don't have an account yet</a></div><br>
+<div align="right" id="Menubutton"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#8595;&#9776; menu</span></div>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
+
 <p>Hello, so you want to draw a new post? That requires a registered email. If you have not registered your email adress, no worries! I will send you an email to ask you for your FNew-username and you can put out your post anyway. ;)</p>
 <p>If you want to send something else than just plain text, Markdown is supported in this form or <a href="mailto:fnew@email.com">send me a file</a> after entering this form.</p>
 <p>FNew post writer is powered by Formspree</p>
@@ -34,6 +117,40 @@
     </FORM>
 <hr>
 This post will go trough me first. It can take up to a week for me to review, process and upload your post.
-    </CENTER>
-</BODY>
+
+   <div id="bottombar">
+   <hr>
+   <i>This site is powered by Github Pages.</I><br></br>
+   <div id="linkbar">
+   <button>
+   <a href="https://github.com/Marnix0810/FNew"><img src="https://marnix0810.github.io/FNew/IMG/GitHub-Mark-32px.png" alt="Go to the Github of FNew" height="32"></a>
+    | <a href="mailto:FNew@email.com"><img src="https://marnix0810.github.io/FNew/IMG/iconfinder_aiga_mail_134146.png" alt="Mail to Marnix 0810 at FNew" height="32"></a>
+    | <a href="https://marnix0810.wordpress.com/"><img src="https://marnix0810.files.wordpress.com/2019/08/cropped-zero..png?w=32" alt="Go to the Marnix 0810 site at wordpress.com" height="32"></a>
+   </button>
+   </div>
+   <p align="left">Please share FNew!</p>
+   <!-- AddToAny BEGIN -->
+   <div align="left" class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="https://marnix0810.github.io/FNew/" data-a2a-title="FNew, the 'everyone-can-write-and-read'-social media site">
+   <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+   <a class="a2a_button_facebook"></a>
+   <a class="a2a_button_twitter"></a>
+   <a class="a2a_button_email"></a>
+   <a class="a2a_button_reddit"></a>
+   <a class="a2a_button_pinterest"></a>
+   <a class="a2a_button_mastodon"></a>
+   <a class="a2a_button_wordpress"></a>
+   <a class="a2a_button_skype"></a>
+   <a class="a2a_button_flipboard"></a>
+   <a class="a2a_button_pocket"></a>
+   <a class="a2a_button_whatsapp"></a>
+   </div>
+   <script>
+   var a2a_config = a2a_config || {};
+   a2a_config.onclick = 1;
+   a2a_config.num_services = 4;
+   </script>
+   <script async src="https://static.addtoany.com/menu/page.js"></script>
+   <!-- AddToAny END -->
+   </div>
+    </CENTER></BODY>
     </HTML>
